@@ -8,7 +8,7 @@ const todoSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        default:'',
+        default:false,
     },
 
     done: {
@@ -18,4 +18,3 @@ const todoSchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model("todo", todoSchema)
-
